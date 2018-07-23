@@ -33,7 +33,7 @@ public class Annihilation : MonoBehaviour {
         /*for (int i = count; i < Mathf.Min(count+10000, vertices.Length); i++)
         {
             perlin = Mathf.PerlinNoise(Time.time, i * 10f) - .5f;
-            vertices[i] = Vector3.Lerp(vertices[i], vertices[i] + normals[i] * Time.deltaTime * perlin, Time.deltaTime);
+            vertices[i] = Vector3.Lerp(vertices[i], vertices[i] + normals[i] * Time.deltaTime * perlin*10f, Time.deltaTime*.1f);
         }
 
         count += 10000;
